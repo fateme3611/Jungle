@@ -1,0 +1,33 @@
+<section class="admin-products-new">
+
+    <header class="page-header">
+        <h1>Login!</h1>
+    </header>
+
+  
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-1">
+            <%= form_tag '/login' do %>
+
+
+                <div class="form-group">
+                    <Label>Email</label>
+                    <span class="form-control">
+                        <%= text_field_tag :email %>
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <Label>Password</label>
+                    <span class="form-control">
+                        <%= password_field_tag :password %>
+                    </span>
+                </div>
+
+                <%= submit_tag "Submit" %>
+
+            <% end %>
+        </div>
+    </div>
+</section>
